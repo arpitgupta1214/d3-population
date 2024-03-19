@@ -44,7 +44,7 @@ function App() {
       let populationData = {};
       await Promise.all([
         d3.json(
-          "https://res.cloudinary.com/tropicolx/raw/upload/v1/Building%20Interactive%20Data%20Visualizations%20with%20D3.js%20and%20React/world.geojson",
+          "https://res.cloudinary.com/tropicolx/raw/upload/v1/Building%20Interactive%20Data%20Visualizations%20with%20D3.js%20and%20React/world.geojson"
         ),
         d3.csv(
           "https://res.cloudinary.com/tropicolx/raw/upload/v1/Building%20Interactive%20Data%20Visualizations%20with%20D3.js%20and%20React/world_population.csv",
@@ -53,7 +53,7 @@ function App() {
               ...populationData,
               [d.code]: +d.population,
             };
-          },
+          }
         ),
       ]).then((fetchedData) => {
         const topographyData = fetchedData[0];
@@ -82,7 +82,7 @@ function App() {
       <div className="wrapper">
         <h1>
           <span className="thin">World</span>
-          <span className="bold">Population</span> Insights 2022
+          <span className="bold">Population</span> Insights 2024
         </h1>
         <main className="main">
           <div className="grid">
