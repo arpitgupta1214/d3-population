@@ -6,7 +6,7 @@ import PieChart from "./components/PieChart";
 import WorldMap from "./components/WorldMap";
 
 const pieChartData = [
-  { name: "Christians", value: 2_173_180_000 },
+  { name: "Christians", value: 2_174_180_000 },
   { name: "Muslims", value: 1_598_510_000 },
   { name: "None", value: 1_126_500_000 },
   { name: "Hindus", value: 1_033_080_000 },
